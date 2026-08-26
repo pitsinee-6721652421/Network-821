@@ -1,0 +1,9 @@
+ docker -v  29.6.1
+ docker ps
+ docker ps --all   listทั้งหมด
+ docker run busybox
+docker run busybox google.com
+docker stop ตามด้วยid  หยุด
+docker rm  ตามด้วยid   ลบ
+docker run nginx
+docker run -p 80:80 nginx บอกว่าแมท pory
