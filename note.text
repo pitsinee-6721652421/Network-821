@@ -1,0 +1,35 @@
+docker -v         29.6.1
+docker ps
+docker ps --all   listทั้งหมด
+docker run busybox
+docker run busybox google.com
+docker stop ตามด้วยid        หยุด
+docker rm  ตามด้วยid         ลบ
+docker run nginx
+docker run -p 80:80 nginx บอกว่าแมท pory
+
+//12/9/69
+docker network rm       ตามด้วยชื่อnetworkที่จะลบ
+docker network ls       ดูnetwork
+
+             kubectl
+
+
+kubectl get all
+kubectl get pods
+kubectl get all --all ดูหมด
+kubectl delete all --all ลบหมด
+
+apply ตามชื่อไฟล์
+kubectl apply -f .\client-deployment.yml
+kubectl apply -f .\server-deployment.yml
+kubectl apply -f .\mongo-deployment.yml
+
+
+kubectl apply -f . ไฟล์ทั้งหมด
+
+kubectl port-forward svc/client-service 30001:80
+http://localhost:30001
+
+kubectl port-forward svc/server-service 30002:80
+http://localhost:30002/api/health
