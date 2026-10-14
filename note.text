@@ -21,7 +21,7 @@ kubectl get all
 kubectl get all --all
 
 *ลบ*
-kubectl delete all -all
+kubectl delete all --all
 
 # Apply 
 kubectl apply -f .\client-deployment.yml
@@ -34,3 +34,14 @@ kubectl apply -f .
 kubectl port-forward svc/client-service 30001:80
 kubectl port-forward svc/server-service 30002:80
 http://localhost:30002/api/health
+
+14/10/69
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-
+nginx/controller-v1.15.1/deploy/static/provider/cloud/deploy.yaml
+
+Add-Content -Path "C:\Windows\System32\drivers\etc\hosts" -Value "`n127.0.0.1 todo.com"
+
+ipconfig /flushdns
+
+ping todo.com
